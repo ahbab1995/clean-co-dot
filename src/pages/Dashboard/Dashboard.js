@@ -1,15 +1,18 @@
-import React from 'react';
+import React from "react";
+import DashboardSiddebar from "../../components/DashboardSiddebar";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
-    return (
-        <div>
-            <h1>dashboard</h1>
-            <h1>dashboard</h1>
-            <h1>dashboard</h1>
-            <h1>dashboard</h1>
-            <h1>dashboard</h1>
-        </div>
-    );
+  return (
+  
+      
+      <DashboardSiddebar>
+        <h1>Clean co</h1>
+      
+        <Outlet />
+      </DashboardSiddebar>
+   
+  );
 };
 
 export default Dashboard;

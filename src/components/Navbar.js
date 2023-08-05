@@ -1,15 +1,38 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import useAdmin from "../hooks/useAdmin";
 
 const Navbar = ({ children }) => {
   const [dark, setDark] = useState(false);
   const [admin] = useAdmin()
+  const { pathname } = useLocation();
   return (
     <div class="drawer  drawer-end" data-theme={dark ? "dark" : "light"}>
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         <div class="w-full navbar bg-base-100 fixed top-0 z-50 lg:px-20">
+        {pathname.includes("dashboard") && (
+            <label
+              tabindex='0'
+              for='my-drawer-2'
+              class='btn btn-ghost lg:hidden '
+            >
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                class='h-5 w-5'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M4 6h16M4 12h16M4 18h7'
+                />
+              </svg>
+            </label>
+          )}
           <div class="flex-1 px-2 mx-2 text-2xl">ahbab Clean Co.</div>
           <div class="flex-none lg:hidden">
             <label for="my-drawer-3" class="btn btn-square btn-ghost">
@@ -106,7 +129,7 @@ const Navbar = ({ children }) => {
         </div>
         {children}
       </div>
-      <div class="drawer-side">
+      <div class="drawer-side mt-10">
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
           <li>
