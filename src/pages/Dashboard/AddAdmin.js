@@ -4,10 +4,7 @@ const AddAdmin = () => {
     return (
         <div>
             <h1>this is Addadmin</h1>
-            <h1>this is Addadmin</h1>
-            <h1>this is Addadmin</h1>
-            <h1>this is Addadmin</h1>
-            <h1>this is Addadmin</h1>
+           
         </div>
     );
 };

@@ -5,8 +5,8 @@ import BucketGirl from "../../assets/image/bucketgirl.png";
 const Landing = () => {
   return (
     <div className='relative'>
-      <div class='hero h-screen lg:h-[60vh] bg-accent relative z-10 mt-16'>
-        <div class='hero-content flex-col lg:flex-row'>
+      <div className='hero h-screen lg:h-[60vh] bg-accent relative z-10 mt-16'>
+        <div className='hero-content flex-col lg:flex-row'>
           <div>
             <p
               data-aos='fade-right'
@@ -20,7 +20,7 @@ const Landing = () => {
               data-aos='fade-right'
               data-aos-delay='400'
               data-aos-duration='900'
-              class='text-5xl font-bold'
+              className='text-5xl font-bold'
             >
               Professional Cleaning Service
             </h1>
@@ -28,7 +28,7 @@ const Landing = () => {
               data-aos='fade-right'
               data-aos-delay='600'
               data-aos-duration='800'
-              class='py-6 max-w-xl'
+              className='py-6 max-w-xl'
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has
@@ -36,13 +36,13 @@ const Landing = () => {
             <button
               data-aos='zoom-in'
               data-aos-delay='1300'
-              class='btn btn-primary'
+              className='btn btn-primary'
             >
               Get Started
             </button>
           </div>
           <div className='h-[60vh] shrink-0'>
-            <img src={BucketGirl} class='h-full' alt='' />
+            <img src={BucketGirl} className='h-full' alt='' />
           </div>
         </div>
       </div>
@@ -52,42 +52,42 @@ const Landing = () => {
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
           <input
             type='text'
             placeholder='Type here'
-            class='input input-bordered w-full'
+            className='input input-bordered w-full'
           />
         </div>
         <button className='btn btn-primary mt-5'>Get a Quote</button>
